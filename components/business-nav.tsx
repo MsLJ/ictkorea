@@ -6,7 +6,11 @@ import { usePathname } from "next/navigation"
 export default function BusinessNav() {
   const pathname = usePathname()
 
-  const menuItems = [{ href: "/business", label: "사업관리 방법론" }]
+  const menuItems = [
+    { href: "/business/functions", label: "주요기능" },
+    { href: "/business/specifications", label: "제품규격" },
+    { href: "/business/architecture", label: "적용방안" },
+  ]
 
   return (
     <div className="sticky top-16 z-40 bg-white border-b border-gray-200 shadow-sm">

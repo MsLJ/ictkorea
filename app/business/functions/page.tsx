@@ -29,7 +29,7 @@ export default function FunctionsPage() {
           </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/products/function-1.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-U0xpe5Um04VOvXPrvFVW4GAJ47cy1M.png"
               alt="클라이언트장치 포트 구성 및 포트간 접근제어"
               width={1200}
               height={600}
