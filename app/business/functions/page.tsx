@@ -23,10 +23,6 @@ export default function FunctionsPage() {
               1. 보안관리 - 클라이언트장치 포트 구성 및 포트간 접근제어
             </h2>
           </div>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            클라이언트장치는 일반포트와 보안채널포트를 제공하며, 일반포트는 제1네트워크 접속만 가능하고, 보안채널포트는
-            제2네트워크 접속만 가능합니다.
-          </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-Lef2eIs2m29msM7eWo2W286MhNtLrv.jpg"
@@ -45,10 +41,6 @@ export default function FunctionsPage() {
               2. 보안관리 - 클라이언트장치 및 게이트웨이장치 접근 제어
             </h2>
           </div>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            승인된 클라이언트장치를 통해서만 제2네트워크 접속이 가능하고, 인가된 관리자PC만 관리자메뉴 접근이
-            가능합니다.
-          </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-sXIpdso9CgbBNkX4kSxigA9CHpc0BN.jpg"
@@ -65,7 +57,6 @@ export default function FunctionsPage() {
           <div className="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
             <h2 className="text-2xl font-bold text-gray-900 tracking-tight">3. 네트워크 구성 - 게이트웨이 장치 네트워크 구성</h2>
           </div>
-          <p className="text-gray-700 mb-6 leading-relaxed">게이트웨이장치는 유연한 네트워크 구성을 지원합니다.</p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-PuE12wcyx4NZwpJNQijI7upM9eaKN9.jpg"
@@ -82,9 +73,6 @@ export default function FunctionsPage() {
           <div className="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
             <h2 className="text-2xl font-bold text-gray-900">4. 네트워크 구성 - 사용자PC 그룹별 VLAN 구성</h2>
           </div>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            제2네트워크 접속 장비에 대하여 그룹별 별도의 VLAN 구성을 지원합니다.
-          </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-Sy2CGUqg8Wur0kmANa3sKxl8QkPiW5.jpg"
@@ -119,10 +107,6 @@ export default function FunctionsPage() {
               6. 장애 및 운영관리 - 보안채널포트에 연결된 장비에 대한 접근제어 및 네트워크 구성
             </h2>
           </div>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            클라이언트장치의 보안채널포트에 연결된 사용자PC는 제2네트워크 영역에 설치된 NAC 등의 보안솔루션에서 해당
-            PC의 ARP, DHCP 관리가 가능하며, PC간 단일 네트워크 구성이 가능합니다.
-          </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6-tNmkpIuq3WKUZRDrRaD56fNP0eZ4EA.jpg"
@@ -139,9 +123,6 @@ export default function FunctionsPage() {
           <div className="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
             <h2 className="text-2xl font-bold text-gray-900 tracking-[-0.06em]">7. 장애 및 운영관리 - 클라이언트장치 장애 시 PC 동작</h2>
           </div>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            클라이언트장치의 펌웨어 오류시에도 일반포트에 연결된 장비는 정상 동작합니다.
-          </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7-unGrGPbIntZl5gUsYWf5hiWprdf7TT.jpg"
@@ -158,9 +139,6 @@ export default function FunctionsPage() {
           <div className="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
             <h2 className="text-2xl font-bold text-gray-900 tracking-[-0.06em]">8. 장애 및 운영관리 - 클라이언트장치 장치 상태 관리</h2>
           </div>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            클라이언트장치의 LED를 통하여 클라이언트장치 상태 관리가 가능합니다.
-          </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8-WV9snXzq715MYcOTQpYekhU8onzpZK.jpg"
