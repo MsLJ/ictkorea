@@ -1,3 +1,4 @@
+import Link from "next/link"
 import MainSlider from "@/components/main-slider"
 
 const serviceImages = [
@@ -57,12 +58,18 @@ export default function Home() {
           <h2 id="novagate-banner-title" className="sr-only">
             NOVAGATE V3.0 플래그십 제품
           </h2>
-          <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/05_Novagate-QcCD4vup9AzVnLxweJHgKiTc5mZXXw.png"
-            alt="NOVAGATE V3.0 플래그십 제품과 CC인증, 국정원 검증필 암호모듈, Zero-Install, TCO 절감 기능 안내"
-            className="block h-auto w-full"
-            loading="lazy"
-          />
+          <Link
+            href="/business/architecture"
+            aria-label="Novagate V3.0 상세보기"
+            className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4"
+          >
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/05_Novagate-QcCD4vup9AzVnLxweJHgKiTc5mZXXw.png"
+              alt="NOVAGATE V3.0 플래그십 제품과 CC인증, 국정원 검증필 암호모듈, Zero-Install, TCO 절감 기능 안내"
+              className="block h-auto w-full transition-opacity duration-200 group-hover:opacity-90"
+              loading="lazy"
+            />
+          </Link>
         </div>
       </section>
     </div>
