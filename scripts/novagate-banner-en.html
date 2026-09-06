@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1600px; height: 560px; font-family: 'Segoe UI', 'Noto Sans', Arial, sans-serif; }
+  .banner {
+    width: 1600px; height: 560px;
+    background: linear-gradient(135deg, #eaf3fc 0%, #f6faff 55%, #ffffff 100%);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 48px 72px; overflow: hidden; position: relative;
+  }
+  .banner::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 10px;
+    background: linear-gradient(180deg, #0066cc, #003366);
+  }
+  .device-col { flex: 0 0 620px; }
+  .device-frame {
+    background: #ffffff; border: 1px solid #dbe7f3; border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 51, 102, 0.10);
+    padding: 24px; display: flex; flex-direction: column; gap: 18px;
+  }
+  .device-top {
+    background: linear-gradient(180deg, #f2f5f8, #dfe5ec); border-radius: 10px;
+    padding: 14px 18px; display: flex; align-items: center; justify-content: space-between;
+  }
+  .device-name { font-size: 26px; font-weight: 800; color: #0a2540; letter-spacing: 1px; }
+  .device-strip { display: flex; gap: 8px; }
+  .led { width: 12px; height: 12px; border-radius: 50%; }
+  .led.g { background: #22c55e; } .led.b { background: #3b82f6; }
+  .led.a { background: #f59e0b; } .led.r { background: #ef4444; }
+  .ports {
+    display: flex; gap: 10px; align-items: center;
+  }
+  .port-block {
+    background: #1f2937; border-radius: 6px; padding: 10px 12px;
+    color: #9ca3af; font-size: 12px; font-weight: 600; text-align: center;
+  }
+  .port-block .jacks { display: flex; gap: 5px; margin-bottom: 6px; }
+  .jack { width: 14px; height: 12px; background: #0f172a; border: 1px solid #374151; border-radius: 2px; }
+  .port-label { color: #cbd5e1; }
+  .text-col { flex: 1; padding-left: 64px; }
+  .eyebrow {
+    display: inline-block; font-size: 15px; font-weight: 700; letter-spacing: 4px;
+    color: #0066cc; margin-bottom: 14px;
+  }
+  h1 { font-size: 56px; font-weight: 800; color: #0a2540; margin-bottom: 26px; }
+  h1 .accent { color: #0066cc; }
+  ul { list-style: none; margin-bottom: 34px; }
+  li {
+    font-size: 24px; color: #1f2937; font-weight: 500;
+    display: flex; align-items: center; gap: 14px; margin-bottom: 14px;
+  }
+  .check {
+    width: 30px; height: 30px; border-radius: 50%; background: #0066cc;
+    color: #fff; display: inline-flex; align-items: center; justify-content: center;
+    font-size: 17px; flex: 0 0 30px;
+  }
+  .cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: linear-gradient(135deg, #0066cc, #004a99); color: #fff;
+    font-size: 20px; font-weight: 700; padding: 16px 34px; border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="device-col">
+    <div class="device-frame">
+      <div class="device-top">
+        <div class="device-name">NOVAGATE V3.0</div>
+        <div class="device-strip">
+          <span class="led g"></span><span class="led g"></span><span class="led b"></span>
+          <span class="led b"></span><span class="led a"></span><span class="led r"></span>
+        </div>
+      </div>
+      <div class="ports">
+        <div class="port-block">
+          <div class="jacks"><span class="jack"></span><span class="jack"></span><span class="jack"></span><span class="jack"></span></div>
+          <div class="port-label">1G RJ45 ×4</div>
+        </div>
+        <div class="port-block">
+          <div class="jacks"><span class="jack" style="width:22px"></span></div>
+          <div class="port-label">1G/10G SFP+</div>
+        </div>
+        <div class="port-block">
+          <div class="jacks"><span class="jack"></span><span class="jack"></span></div>
+          <div class="port-label">Console · Serial</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-col">
+    <span class="eyebrow">FLAGSHIP PRODUCT</span>
+    <h1>NOVAGATE <span class="accent">V3.0</span></h1>
+    <ul>
+      <li><span class="check">✔</span> CC Certified</li>
+      <li><span class="check">✔</span> NIS-Validated Cryptographic Module</li>
+      <li><span class="check">✔</span> Zero-Install</li>
+      <li><span class="check">✔</span> TCO Reduction</li>
+    </ul>
+    <span class="cta">View Details (NOVAGATE V3.0)</span>
+  </div>
+</div>
+</body>
+</html>

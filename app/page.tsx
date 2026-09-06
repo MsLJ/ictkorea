@@ -73,7 +73,11 @@ export default function Home() {
             className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4"
           >
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/05_Novagate-QcCD4vup9AzVnLxweJHgKiTc5mZXXw.png"
+              src={
+                lang === "ko"
+                  ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/05_Novagate-QcCD4vup9AzVnLxweJHgKiTc5mZXXw.png"
+                  : `/images/novagate-v3/banner-${lang}.png`
+              }
               alt={t.main.novagateBannerAlt}
               className="block h-auto w-full transition-opacity duration-200 group-hover:opacity-90"
               loading="lazy"
