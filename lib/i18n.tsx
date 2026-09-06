@@ -1,6 +1,7 @@
 "use client"
 
 import { createContext, useContext, useEffect, useState } from "react"
+import { useRouter } from "next/navigation"
 
 export type Lang = "ko" | "en" | "es"
 
@@ -379,6 +380,7 @@ const LanguageContext = createContext<{ lang: Lang; setLang: (lang: Lang) => voi
 })
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const router = useRouter()
   const [lang, setLangState] = useState<Lang>("ko")
 
   useEffect(() => {
@@ -391,6 +393,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const setLang = (next: Lang) => {
     setLangState(next)
     window.localStorage.setItem("ict-lang", next)
+    router.push("/")
   }
 
   return (
