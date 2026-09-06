@@ -5,9 +5,10 @@ import MainSlider from "@/components/main-slider"
 import { useLanguage } from "@/lib/i18n"
 
 export default function Home() {
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
 
-  const serviceImages = [
+  const serviceImages = lang === "ko"
+    ? [
     {
       name: t.main.services[0],
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/01_communication_infrastructure-wkRP0C9IvjBQ0SEvXzlobIoo17Bf3f.png",
@@ -20,16 +21,18 @@ export default function Home() {
       name: t.main.services[2],
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/03_integrated_security_solution-i2PX76TSOjMUa8Oom9Flo24VlLF5yE.png",
     },
-    {
-      name: t.main.services[3],
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/02_NI_SI_integration-pPePf80TfB97tdDLxmPArU2Tsfcidm.png",
-    },
-  ]
+      {
+        name: t.main.services[3],
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/02_NI_SI_integration-pPePf80TfB97tdDLxmPArU2Tsfcidm.png",
+      },
+    ]
+    : []
 
   return (
     <div className="min-h-screen bg-background">
       <MainSlider />
 
+      {lang === "ko" && (
       <section className="bg-background px-4 py-12 sm:px-6 lg:px-8" aria-labelledby="service-images-title">
         <div className="mx-auto max-w-7xl">
           <div className="mb-7 flex items-end justify-between gap-4">
@@ -57,6 +60,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      )}
 
       <section className="bg-background px-4 pb-12 sm:px-6 lg:px-8" aria-labelledby="novagate-banner-title">
         <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
