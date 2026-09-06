@@ -30,6 +30,7 @@ const dictionaries = {
       customers: "Customers",
       customersChildren: [{ label: "주요고객사", url: "/customers" }],
       news: "News",
+      newsChildren: [{ label: "공지사항", url: "/news/notice" }],
       home: "홈",
       novagate: "Novagate V3",
     },

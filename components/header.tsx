@@ -34,7 +34,12 @@ export default function Header() {
             url: "/customers",
             children: t.nav.customersChildren,
           },
-          { id: "news", label: t.nav.news, url: "/news" },
+          {
+            id: "news",
+            label: t.nav.news,
+            url: "/news/notice",
+            children: t.nav.newsChildren,
+          },
         ]
       : [
           { id: "home", label: t.nav.home, url: "/" },
