@@ -16,38 +16,16 @@ export default function SpecificationsPage() {
       <BusinessNav />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">제품 규격</h2>
-          <p className="text-sm text-gray-600 sm:hidden">이미지를 좌우로 스크롤하여 전체 내용을 확인하세요</p>
-        </div>
-
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 tracking-tight">Novagate V3.0 클라이언트장치</h3>
-          <div className="bg-white rounded-lg shadow-lg overflow-x-auto">
-            <div className="min-w-[800px]">
-              <Image
-                src="/images/design-mode/%EA%B7%B8%EB%A6%BC9-1.jpg"
-                alt="Novagate V3.0 클라이언트장치 규격"
-                width={1200}
-                height={400}
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 tracking-tight">Novagate V3.0 게이트웨이장치</h3>
-          <div className="bg-white rounded-lg shadow-lg overflow-x-auto">
-            <div className="min-w-[800px]">
-              <Image
-                src="/images/design-mode/%EA%B7%B8%EB%A6%BC9-2.jpg"
-                alt="Novagate V3.0 게이트웨이장치 규격"
-                width={1200}
-                height={400}
-                className="w-full h-auto"
-              />
-            </div>
+          <div className="overflow-hidden rounded-lg bg-white shadow-lg">
+            <Image
+              src="/images/products/novagate-v3-specifications.jpg"
+              alt="Novagate V3.0 클라이언트장치 및 게이트웨이장치 제품 규격"
+              width={1200}
+              height={900}
+              className="h-auto w-full"
+              priority
+            />
           </div>
         </div>
 
