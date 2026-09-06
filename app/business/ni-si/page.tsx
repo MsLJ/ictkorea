@@ -26,7 +26,7 @@ export default function NiSiPage() {
         </div>
         <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-[0_24px_70px_-35px_rgba(15,23,42,0.45)] sm:p-8">
           <Image
-            src="/images/products/ni-si-services.png"
+            src="/images/business-nisi.png"
             alt="NI/SI 사업 수행 영역: ISP 컨설팅, 정보시스템 이전, 인프라 및 전산실 구축, 정보자원 통합 구축, 통합보안 및 망분리 구축, 운영 및 유지보수"
             width={646}
             height={728}

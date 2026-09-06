@@ -25,10 +25,10 @@ export default function ApplicationsPage() {
 
           <div className="flex flex-col gap-6">
             <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-[0_24px_70px_-35px_rgba(15,23,42,0.45)] sm:p-5">
-              <Image src="/images/products/its-bis-control-room.png" alt="U-통합상황실 기반 ITS 및 BIS 구축 구조도" width={600} height={340} className="h-auto w-full" priority />
+              <Image src="/images/business-its1.png" alt="U-통합상황실 기반 ITS 및 BIS 구축 구조도" width={600} height={340} className="h-auto w-full" priority />
             </div>
             <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-[0_24px_70px_-35px_rgba(15,23,42,0.45)] sm:p-5">
-              <Image src="/images/products/its-bis-system.png" alt="스마트 교차로와 지능형 교통 시스템 구성도" width={1009} height={568} className="h-auto w-full" />
+              <Image src="/images/business-its2.png" alt="스마트 교차로와 지능형 교통 시스템 구성도" width={1009} height={568} className="h-auto w-full" />
             </div>
           </div>
         </div>

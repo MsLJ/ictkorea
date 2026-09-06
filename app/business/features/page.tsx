@@ -24,7 +24,7 @@ export default function IntegratedSecurityPage() {
 
         <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-[0_24px_70px_-35px_rgba(15,23,42,0.45)] sm:p-8">
           <Image
-            src="/images/products/integrated-security.png"
+            src="/images/business-security.png"
             alt="통합보안 구축 및 컨설팅 업무 영역"
             width={588}
             height={696}
