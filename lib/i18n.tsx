@@ -113,6 +113,7 @@ const dictionaries = {
     architecture: {
       heroTitle: "제품아키텍처",
       heroSub: "Novagate V3.0 시스템 구조",
+      image: "/images/products/architecture-diagram.png",
       compositionTitle: "제품 구성",
       compositionDesc: "Novagate V3.0은 게이트웨이 장치와 클라이언트 장치로 구성 됩니다",
       cards: [
@@ -232,6 +233,7 @@ const dictionaries = {
     architecture: {
       heroTitle: "Product Architecture",
       heroSub: "Novagate V3.0 System Structure",
+      image: "/images/novagate-v3/architecture-en.png",
       compositionTitle: "Product Composition",
       compositionDesc: "Novagate V3.0 consists of a gateway device and client devices",
       cards: [
@@ -351,6 +353,7 @@ const dictionaries = {
     architecture: {
       heroTitle: "Arquitectura del producto",
       heroSub: "Estructura del sistema Novagate V3.0",
+      image: "/images/novagate-v3/architecture-es.png",
       compositionTitle: "Composición del producto",
       compositionDesc: "Novagate V3.0 se compone de un dispositivo de pasarela y dispositivos cliente",
       cards: [

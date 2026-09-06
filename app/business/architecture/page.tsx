@@ -29,7 +29,7 @@ export default function ArchitecturePage() {
         <div className="bg-white rounded-lg shadow-xl p-6 sm:p-8 lg:p-12 mb-12">
           <div className="flex justify-center mb-8">
             <Image
-              src="/images/products/architecture-diagram.png"
+              src={t.architecture.image}
               alt="Novagate V3.0 Architecture Diagram"
               width={1200}
               height={500}
