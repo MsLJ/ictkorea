@@ -9,20 +9,24 @@ export default function Home() {
 
   const serviceImages = lang === "ko"
     ? [
-    {
-      name: t.main.services[0],
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/01_communication_infrastructure-wkRP0C9IvjBQ0SEvXzlobIoo17Bf3f.png",
-    },
-    {
-      name: t.main.services[1],
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/04_ITS_BIS_construction-M1ehQp4AgAKpt1CgPeaXh3Y48t2Vjz.png",
-    },
-    {
-      name: t.main.services[2],
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/03_integrated_security_solution-i2PX76TSOjMUa8Oom9Flo24VlLF5yE.png",
-    },
+      {
+        name: t.main.services[0],
+        url: "/business/communication",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/01_communication_infrastructure-wkRP0C9IvjBQ0SEvXzlobIoo17Bf3f.png",
+      },
+      {
+        name: t.main.services[1],
+        url: "/business/applications",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/04_ITS_BIS_construction-M1ehQp4AgAKpt1CgPeaXh3Y48t2Vjz.png",
+      },
+      {
+        name: t.main.services[2],
+        url: "/business/features",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/03_integrated_security_solution-i2PX76TSOjMUa8Oom9Flo24VlLF5yE.png",
+      },
       {
         name: t.main.services[3],
+        url: "/business/ni-si",
         src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/02_NI_SI_integration-pPePf80TfB97tdDLxmPArU2Tsfcidm.png",
       },
     ]
@@ -54,7 +58,15 @@ export default function Home() {
                   className="block h-auto w-full"
                   loading="lazy"
                 />
-                <figcaption className="sr-only">{image.name}</figcaption>
+                <figcaption className="flex items-center justify-between gap-2 px-4 py-3">
+                  <span className="text-sm font-medium text-foreground">{image.name}</span>
+                  <Link
+                    href={image.url}
+                    className="shrink-0 rounded-md border border-slate-300 px-3 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:border-[#0066CC] hover:text-[#0066CC]"
+                  >
+                    상세보기
+                  </Link>
+                </figcaption>
               </figure>
             ))}
           </div>
