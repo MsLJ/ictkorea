@@ -13,7 +13,7 @@ importers:
         version: 1.7.0(@date-fns/tz@1.5.0)(@types/react@19.2.18)(date-fns@4.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@hookform/resolvers':
         specifier: ^3.10.0
-        version: 3.10.0(react-hook-form@7.86.0(react@19.2.8))
+        version: 3.10.0(react-hook-form@7.87.0(react@19.2.8))
       '@radix-ui/react-accordion':
         specifier: latest
         version: 1.2.20(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -131,6 +131,9 @@ importers:
       next-themes:
         specifier: latest
         version: 0.4.6(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      postgres:
+        specifier: ^3.4.9
+        version: 3.4.9
       react:
         specifier: ^19
         version: 19.2.8
@@ -142,7 +145,7 @@ importers:
         version: 19.2.8(react@19.2.8)
       react-hook-form:
         specifier: latest
-        version: 7.86.0(react@19.2.8)
+        version: 7.87.0(react@19.2.8)
       react-resizable-panels:
         specifier: latest
         version: 4.12.3(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -2489,6 +2492,10 @@ packages:
     resolution: {integrity: sha512-u82N74LFzG8ca+dD8puPnplTXoGH4fTPpVGuIbt36G3qvNlkvfD0lEAZSxaly3KX8TS/L1A1gsCEmvKmBcVbkQ==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postgres@3.4.9:
+    resolution: {integrity: sha512-GD3qdB0x1z9xgFI6cdRD6xu2Sp2WCOEoe3mtnyB5Ee0XrrL5Pe+e4CCnJrRMnL1zYtRDZmQQVbvOttLnKDLnaw==}
+    engines: {node: '>=12'}
+
   powershell-utils@0.1.0:
     resolution: {integrity: sha512-dM0jVuXJPsDN6DvRpea484tCUaMiXWjuCn++HGTqUWzGDjv5tZkEZldAJ/UMlqRYGFrD/etByo4/xOuC/snX2A==}
     engines: {node: '>=20'}
@@ -2539,8 +2546,8 @@ packages:
     peerDependencies:
       react: ^19.2.8
 
-  react-hook-form@7.86.0:
-    resolution: {integrity: sha512-4kbWJrh5jPZt1+YqVcXcGKffGcXV/XVbozknLh0Yjh0KhpoAkus21TAQhzRYqNwFkkObmnSvRlZZ3GT+ehoIrA==}
+  react-hook-form@7.87.0:
+    resolution: {integrity: sha512-zhFzWvLxNHH+8839OnZcUxgMZw88ah2jZWDWvKWgF3Tpbnd0vKL+dlcuU3nZVWESZQjd81EW8K+wU+cYfYAc0w==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
@@ -3226,9 +3233,9 @@ snapshots:
     dependencies:
       hono: 4.12.25
 
-  '@hookform/resolvers@3.10.0(react-hook-form@7.86.0(react@19.2.8))':
+  '@hookform/resolvers@3.10.0(react-hook-form@7.87.0(react@19.2.8))':
     dependencies:
-      react-hook-form: 7.86.0(react@19.2.8)
+      react-hook-form: 7.87.0(react@19.2.8)
 
   '@img/colour@1.1.0':
     optional: true
@@ -4079,7 +4086,7 @@ snapshots:
       immer: 11.1.18
       redux: 5.0.1
       redux-thunk: 3.1.0(redux@5.0.1)
-      reselect: 5.2.0
+      reselect: 5.3.0
     optionalDependencies:
       react: 19.2.8
       react-redux: 9.3.0(@types/react@19.2.18)(react@19.2.8)(redux@5.0.1)
@@ -5118,6 +5125,8 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  postgres@3.4.9: {}
+
   powershell-utils@0.1.0: {}
 
   powershell-utils@0.2.0: {}
@@ -5165,7 +5174,7 @@ snapshots:
       react: 19.2.8
       scheduler: 0.27.0
 
-  react-hook-form@7.86.0(react@19.2.8):
+  react-hook-form@7.87.0(react@19.2.8):
     dependencies:
       react: 19.2.8
 

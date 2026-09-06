@@ -1,29 +1,36 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import Link from "next/link"
 import { useLanguage } from "@/lib/i18n"
 
-// DB 연결 전 임시 데이터. 관리자 글쓰기 기능 추가 시 API로 대체됩니다.
-const sampleNotices = [
-  {
-    id: 1,
-    title: "ICT KOREA 홈페이지가 새롭게 단장했습니다.",
-    date: "2026-09-06",
-    content:
-      "안녕하세요, 아이씨티코리아입니다.\n더 나은 서비스를 위해 홈페이지를 새롭게 리뉴얼했습니다.\n앞으로 많은 관심 부탁드립니다.",
-  },
-]
+type Notice = {
+  id: number
+  title: string
+  content: string
+  created_at: string
+}
 
 const texts = {
-  ko: { title: "공지사항", sub: "아이씨티코리아의 새로운 소식을 알려드립니다", notice: "공지사항", date: "등록일", empty: "등록된 공지사항이 없습니다.", back: "목록으로" },
-  en: { title: "Notice", sub: "Stay up to date with the latest news from ICT KOREA", notice: "Notice", date: "Date", empty: "No notices posted yet.", back: "Back to list" },
-  es: { title: "Avisos", sub: "Manténgase al día con las últimas noticias de ICT KOREA", notice: "Aviso", date: "Fecha", empty: "Aún no hay avisos publicados.", back: "Volver a la lista" },
+  ko: { title: "공지사항", sub: "아이씨티코리아의 새로운 소식을 알려드립니다", notice: "공지사항", date: "등록일", empty: "등록된 공지사항이 없습니다.", back: "목록으로", admin: "관리자" },
+  en: { title: "Notice", sub: "Stay up to date with the latest news from ICT KOREA", notice: "Notice", date: "Date", empty: "No notices posted yet.", back: "Back to list", admin: "Admin" },
+  es: { title: "Avisos", sub: "Manténgase al día con las últimas noticias de ICT KOREA", notice: "Aviso", date: "Fecha", empty: "Aún no hay avisos publicados.", back: "Volver a la lista", admin: "Admin" },
 }
 
 export default function NoticePage() {
   const { lang } = useLanguage()
   const text = texts[lang]
-  const [selected, setSelected] = useState<(typeof sampleNotices)[number] | null>(null)
+  const [notices, setNotices] = useState<Notice[]>([])
+  const [selected, setSelected] = useState<Notice | null>(null)
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    fetch("/api/notice")
+      .then((res) => res.json())
+      .then((data) => setNotices(data.notices ?? []))
+      .catch(() => setNotices([]))
+      .finally(() => setLoaded(true))
+  }, [])
 
   return (
     <div className="min-h-screen pt-16 bg-slate-50">
@@ -36,39 +43,51 @@ export default function NoticePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
-          {selected ? (
-            <article className="p-6 sm:p-10">
-              <h2 className="text-2xl font-bold text-slate-900">{selected.title}</h2>
-              <p className="mt-3 border-b border-slate-200 pb-6 text-sm text-slate-500">{text.date}: {selected.date}</p>
-              <div className="mt-6 whitespace-pre-line text-base leading-8 text-slate-700">{selected.content}</div>
-              <button
-                onClick={() => setSelected(null)}
-                className="mt-8 rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600"
-              >
-                {text.back}
-              </button>
-            </article>
-          ) : sampleNotices.length === 0 ? (
-            <p className="p-10 text-center text-slate-500">{text.empty}</p>
-          ) : (
-            <table className="w-full">
-              <thead className="bg-slate-100 text-slate-600">
-                <tr>
-                  <th className="px-6 py-4 text-left text-sm font-semibold">{text.notice}</th>
-                  <th className="w-40 px-6 py-4 text-left text-sm font-semibold">{text.date}</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-200">
-                {sampleNotices.map((notice) => (
-                  <tr key={notice.id} className="cursor-pointer hover:bg-blue-50" onClick={() => setSelected(notice)}>
-                    <td className="px-6 py-4 text-slate-800">{notice.title}</td>
-                    <td className="px-6 py-4 text-sm text-slate-500">{notice.date}</td>
+        {selected ? (
+          <article className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm p-6 sm:p-10">
+            <h2 className="text-2xl font-bold text-slate-900">{selected.title}</h2>
+            <p className="mt-3 border-b border-slate-200 pb-6 text-sm text-slate-500">
+              {text.date}: {new Date(selected.created_at).toLocaleDateString("ko-KR")}
+            </p>
+            <div className="mt-6 whitespace-pre-line text-base leading-8 text-slate-700">{selected.content}</div>
+            <button
+              onClick={() => setSelected(null)}
+              className="mt-8 rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600"
+            >
+              {text.back}
+            </button>
+          </article>
+        ) : (
+          <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+            {loaded && notices.length === 0 ? (
+              <p className="p-10 text-center text-slate-500">{text.empty}</p>
+            ) : (
+              <table className="w-full">
+                <thead className="bg-slate-100 text-slate-600">
+                  <tr>
+                    <th className="px-6 py-4 text-left text-sm font-semibold">{text.notice}</th>
+                    <th className="w-40 px-6 py-4 text-left text-sm font-semibold">{text.date}</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          )}
+                </thead>
+                <tbody className="divide-y divide-slate-200">
+                  {notices.map((notice) => (
+                    <tr key={notice.id} className="cursor-pointer hover:bg-blue-50" onClick={() => setSelected(notice)}>
+                      <td className="px-6 py-4 text-slate-800">{notice.title}</td>
+                      <td className="px-6 py-4 text-sm text-slate-500">
+                        {new Date(notice.created_at).toLocaleDateString("ko-KR")}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+          </div>
+        )}
+
+        <div className="mt-6 text-right">
+          <Link href="/news/notice/admin" className="text-sm text-slate-400 hover:text-blue-600">
+            {text.admin}
+          </Link>
         </div>
       </section>
     </div>
