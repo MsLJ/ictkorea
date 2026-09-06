@@ -3,25 +3,6 @@
 import { useState } from "react"
 
 export default function CustomersPage() {
-  const timeline = [
-    {
-      year: "2025",
-      items: ["Novagate V3.0 출시", "콜롬비아 K-ITS교통연계센터 납품"],
-    },
-    {
-      year: "2024",
-      items: ["아이씨티코리아㈜ (법인명 변경)", "Novagate SSL-VPN 개발"],
-    },
-    {
-      year: "2013",
-      items: ["㈜보승 (법인전환)", "155Mhz MSPP집합형 다중광장비 개발"],
-    },
-    {
-      year: "2011",
-      items: ["보승정보통신 창업", "전국 330여 단위 새마을금고 전산관리 및 온라인 지원"],
-    },
-  ]
-
   const majorClients = [
     {
       name: "과천시",
@@ -101,84 +82,10 @@ export default function CustomersPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/70 to-purple-900/50" />
         <div className="relative h-full flex flex-col items-center justify-center px-4">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center">
-            {"오늘을 만든 어제 , 내일을 여는 오늘"}
-          </h1>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center">주요고객사</h1>
           <p className="text-sm sm:text-base lg:text-lg text-white/90 mt-4 text-center">
-            아이씨티코리아 ㈜의 따뜻한 네트워크세상을 만드는 여정은 계속 됩니다.
+            아이씨티코리아와 함께하는 주요 고객사를 소개합니다.
           </p>
-        </div>
-      </div>
-
-      {/* Timeline Section */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
-        <div className="relative">
-          {/* Vertical Line */}
-          <div className="absolute left-2 sm:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-blue-500 to-purple-500 sm:-ml-px" />
-
-          {/* Timeline Items */}
-          <div className="space-y-12 sm:space-y-16">
-            {timeline.map((item, index) => (
-              <div key={item.year} className="relative">
-                {/* Mobile Layout */}
-                <div className="sm:hidden">
-                  <div className="flex items-start gap-6 pl-6">
-                    {/* Year and Node */}
-                    <div className="flex flex-col items-center flex-shrink-0">
-                      <div className="text-xl font-bold text-purple-600 mb-2 whitespace-nowrap">{item.year}</div>
-                      <div className="w-4 h-4 rounded-full bg-purple-500 border-4 border-white shadow-lg relative z-10 -ml-8" />
-                    </div>
-
-                    {/* Content */}
-                    <div className="flex-1 pt-1">
-                      <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-purple-500">
-                        <ul className="space-y-3">
-                          {item.items.map((content, idx) => (
-                            <li key={idx} className="flex items-start gap-2">
-                              <span className="text-purple-500 mt-1">•</span>
-                              <span className="text-gray-700 leading-relaxed">{content}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Desktop Layout */}
-                <div className="hidden sm:block">
-                  <div className={`flex items-center gap-8 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}>
-                    {/* Content */}
-                    <div className="flex-1">
-                      <div
-                        className={`bg-white rounded-lg shadow-lg p-6 border-l-4 ${index % 2 === 0 ? "border-purple-500" : "border-blue-500"}`}
-                      >
-                        <div className="text-2xl font-bold text-purple-600 mb-4">{item.year}</div>
-                        <ul className="space-y-3">
-                          {item.items.map((content, idx) => (
-                            <li key={idx} className="flex items-start gap-2">
-                              <span className="text-purple-500 mt-1">•</span>
-                              <span className="text-gray-700 leading-relaxed">{content}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-
-                    {/* Node */}
-                    <div className="relative flex-shrink-0">
-                      <div
-                        className={`w-6 h-6 rounded-full ${index % 2 === 0 ? "bg-purple-500" : "bg-blue-500"} border-4 border-white shadow-lg relative z-10`}
-                      />
-                    </div>
-
-                    {/* Empty Space */}
-                    <div className="flex-1" />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 

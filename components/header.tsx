@@ -27,7 +27,12 @@ const navigation = [
       { label: "Novagate V3", url: "/business/architecture" },
     ],
   },
-  { id: "customers", label: "Customers", url: "/customers" },
+  {
+    id: "customers",
+    label: "Customers",
+    url: "/customers",
+    children: [{ label: "주요고객사", url: "/customers" }],
+  },
   { id: "news", label: "News", url: "/news" },
 ]
 
