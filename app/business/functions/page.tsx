@@ -29,7 +29,7 @@ export default function FunctionsPage() {
           </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-U0xpe5Um04VOvXPrvFVW4GAJ47cy1M.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-Lef2eIs2m29msM7eWo2W286MhNtLrv.jpg"
               alt="클라이언트장치 포트 구성 및 포트간 접근제어"
               width={1200}
               height={600}
@@ -51,7 +51,7 @@ export default function FunctionsPage() {
           </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/products/function-2.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-sXIpdso9CgbBNkX4kSxigA9CHpc0BN.jpg"
               alt="클라이언트장치 및 게이트웨이장치 접근 제어"
               width={1200}
               height={600}
@@ -68,7 +68,7 @@ export default function FunctionsPage() {
           <p className="text-gray-700 mb-6 leading-relaxed">게이트웨이장치는 유연한 네트워크 구성을 지원합니다.</p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/products/function-3.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-PuE12wcyx4NZwpJNQijI7upM9eaKN9.jpg"
               alt="게이트웨이 장치 네트워크 구성"
               width={1200}
               height={600}
@@ -87,7 +87,7 @@ export default function FunctionsPage() {
           </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/products/function-4.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-Sy2CGUqg8Wur0kmANa3sKxl8QkPiW5.jpg"
               alt="사용자PC 그룹별 VLAN 구성"
               width={1200}
               height={600}
@@ -103,7 +103,7 @@ export default function FunctionsPage() {
           </div>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/products/function-5.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-qEcbsQqLuYVTnbf981M5vBjY0K3jhD.jpg"
               alt="웹 기반 관리환경"
               width={1200}
               height={600}
@@ -125,7 +125,7 @@ export default function FunctionsPage() {
           </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/products/function-6.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6-tNmkpIuq3WKUZRDrRaD56fNP0eZ4EA.jpg"
               alt="보안채널포트 연결 장비 접근제어"
               width={1200}
               height={600}
@@ -144,7 +144,7 @@ export default function FunctionsPage() {
           </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/products/function-7.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7-unGrGPbIntZl5gUsYWf5hiWprdf7TT.jpg"
               alt="클라이언트장치 장애 시 PC 동작"
               width={1200}
               height={600}
@@ -163,7 +163,7 @@ export default function FunctionsPage() {
           </p>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/products/function-8.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8-WV9snXzq715MYcOTQpYekhU8onzpZK.jpg"
               alt="클라이언트장치 장치 상태 관리"
               width={1200}
               height={600}
