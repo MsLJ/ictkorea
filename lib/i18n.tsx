@@ -335,7 +335,7 @@ const dictionaries = {
     specifications: {
       heroTitle: "Especificaciones",
       heroSub: "Especificaciones detalladas de Novagate V3.0",
-      image: "/images/novagate-v3/specs-en.jpg",
+      image: "/images/novagate-v3/specs-es.jpg",
       itemHeader: "Elemento",
       specHeader: "Especificación",
       rows: [
