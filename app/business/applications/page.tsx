@@ -17,10 +17,6 @@ export default function ApplicationsPage() {
             <p className="text-sm font-semibold tracking-[0.2em] text-cyan-600">INTELLIGENT TRANSPORT SYSTEM</p>
             <h2 className="mt-3 text-balance text-3xl font-bold text-slate-900 sm:text-4xl">교통체계의 효율화와 시민 편의 향상</h2>
             <p className="mt-6 text-pretty text-base leading-8 text-slate-600 sm:text-lg">교통체계 효율화법 시행에 의거 시민들의 교통편의를 제공하고 상시 교통 혼잡이 발생하고 있는 주요 교차로 및 간선도로의 교통여건을 개선하는 사업입니다. UTIS와 유기적인 연계체계로 통합첨단교통관리시스템(ATMS)을 구축하고 있습니다.</p>
-            <div className="mt-8 rounded-xl border border-cyan-100 bg-cyan-50 px-5 py-4">
-              <p className="text-sm font-semibold text-cyan-700">고객사</p>
-              <p className="mt-1 text-base text-slate-700">안양시 / 안산시 / 포항시 / 영주시 외</p>
-            </div>
           </div>
 
           <div className="flex flex-col gap-6">

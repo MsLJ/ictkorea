@@ -39,10 +39,6 @@ export default function CommunicationPage() {
             <p className="mt-6 whitespace-pre-line text-pretty text-base leading-8 text-slate-600 sm:text-lg">
               {`네트워크 시스템과 구성요소들을 순차적으로 결합\n하여 하나의 전체 네트워크를 설계 및 구축하는\n사업으로 프레임릴레이/LTE/5G 등을 활용한 네트워크\n컨설팅, 통신망 구축 및 네트워크 응용 시스템 구축을\n수행합니다.`}
             </p>
-            <div className="mt-8 rounded-xl border border-cyan-100 bg-cyan-50 px-5 py-4">
-              <p className="text-sm font-semibold text-cyan-700">고객사</p>
-              <p className="mt-1 text-base text-slate-700">안양시 / 안산시 / 도로교통공단 외</p>
-            </div>
           </div>
         </div>
 
