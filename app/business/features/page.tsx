@@ -19,7 +19,6 @@ export default function IntegratedSecurityPage() {
           <p className="mt-5 max-w-4xl text-base leading-8 text-slate-600 sm:text-lg">
             개별 보안시스템의 최적화 연동을 통한 내/외부 보안위협에 효과적으로 대응하고 통합관리 할 수 있는 보안 아키텍처를 구축하고 컨설팅을 수행합니다.
           </p>
-          <p className="mt-5 text-lg font-semibold text-blue-700">고객사 : 알티넷㈜ / ㈜이젠시스 외</p>
         </div>
 
         <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-[0_24px_70px_-35px_rgba(15,23,42,0.45)] sm:p-8">
