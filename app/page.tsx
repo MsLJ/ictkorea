@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import MainSlider from "@/components/main-slider"
+import CompanyFooter from "@/components/company-footer"
 import { useLanguage } from "@/lib/i18n"
 
 export default function Home() {
@@ -98,16 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      {lang !== "ko" && (
-        <footer className="bg-slate-100 px-4 pb-12 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl rounded-lg bg-white p-8 text-center shadow-sm sm:p-10">
-            <h3 className="text-xl font-bold text-slate-900">{t.company.slogan}</h3>
-            <p className="mt-4 text-slate-700">{t.company.name}</p>
-            <p className="mt-1 text-sm text-slate-600">{t.company.address}</p>
-            <p className="mt-1 text-sm text-slate-600">{t.company.email}</p>
-          </div>
-        </footer>
-      )}
+      <CompanyFooter />
     </div>
   )
 }

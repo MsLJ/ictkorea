@@ -1,4 +1,5 @@
 import Image from "next/image"
+import CompanyFooter from "@/components/company-footer"
 
 export default function IntegratedSecurityPage() {
   return (
@@ -31,6 +32,7 @@ export default function IntegratedSecurityPage() {
           />
         </div>
       </section>
+      <CompanyFooter />
     </main>
   )
 }

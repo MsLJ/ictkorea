@@ -1,4 +1,5 @@
 import Image from "next/image"
+import CompanyFooter from "@/components/company-footer"
 
 export default function NiSiPage() {
   return (
@@ -34,6 +35,7 @@ export default function NiSiPage() {
           />
         </div>
       </section>
+      <CompanyFooter />
     </main>
   )
 }

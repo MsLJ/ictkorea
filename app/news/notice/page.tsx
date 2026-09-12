@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import CompanyFooter from "@/components/company-footer"
 import { useLanguage } from "@/lib/i18n"
 
 type Notice = {
@@ -90,6 +91,8 @@ export default function NoticePage() {
           </Link>
         </div>
       </section>
+
+      <CompanyFooter />
     </div>
   )
 }

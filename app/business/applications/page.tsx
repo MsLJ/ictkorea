@@ -1,4 +1,5 @@
 import Image from "next/image"
+import CompanyFooter from "@/components/company-footer"
 
 export default function ApplicationsPage() {
   return (
@@ -29,6 +30,7 @@ export default function ApplicationsPage() {
           </div>
         </div>
       </section>
+      <CompanyFooter />
     </main>
   )
 }

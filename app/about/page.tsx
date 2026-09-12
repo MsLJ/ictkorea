@@ -1,3 +1,4 @@
+import CompanyFooter from "@/components/company-footer"
 const services = [
   { title: "망분리\n환경 구축", tone: "bg-blue-600" },
   { title: "정보시스템\n통합 및 구축", tone: "bg-blue-700" },
@@ -57,6 +58,7 @@ export default function AboutPage() {
           <p>E-Mail : ttykill@hanmail.net</p>
         </div>
       </section>
+      <CompanyFooter />
     </main>
   )
 }

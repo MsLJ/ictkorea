@@ -1,3 +1,4 @@
+import CompanyFooter from "@/components/company-footer"
 const serviceCards = [
   { title: "엑세스망\n솔루션", tone: "blue" },
   { title: "코어망\n솔루션", tone: "orange" },
@@ -59,6 +60,7 @@ export default function CommunicationPage() {
           </div>
         </div>
       </section>
+      <CompanyFooter />
     </main>
   )
 }

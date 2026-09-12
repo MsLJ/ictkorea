@@ -1,3 +1,4 @@
+import CompanyFooter from "@/components/company-footer"
 const methodologyItems = [
   { label: "품질관리", description: "품질활동계획 수립\n산출물 품질검토 활동\n테스트 및 투입" },
   { label: "의사소통\n관리", description: "의사결정자 식별\n보고 / 검토 계획 수립\n보고 검토 실행 / 시정조치" },
@@ -69,6 +70,7 @@ export default function BusinessPage() {
           ))}
         </div>
       </section>
+      <CompanyFooter />
     </main>
   )
 }
