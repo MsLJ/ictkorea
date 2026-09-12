@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import BusinessNav from "@/components/business-nav"
+import CompanyFooter from "@/components/company-footer"
 import { useLanguage } from "@/lib/i18n"
 
 export default function FunctionsPage() {
@@ -34,15 +35,8 @@ export default function FunctionsPage() {
             </div>
           </div>
         ))}
-
-        {/* Company Info */}
-        <div className="bg-gray-100 rounded-lg p-8 text-center">
-          <h3 className="text-xl font-bold text-gray-900 mb-4 tracking-wide">{t.company.slogan}</h3>
-          <p className="text-gray-700 mb-2">{t.company.name}</p>
-          <p className="text-sm text-gray-600">{t.company.address}</p>
-          <p className="text-sm text-gray-600">{t.company.email}</p>
-        </div>
       </div>
+      <CompanyFooter />
     </div>
   )
 }

@@ -1,5 +1,7 @@
 "use client"
 
+import CompanyFooter from "@/components/company-footer"
+
 import { useState } from "react"
 
 export default function CustomersPage() {
@@ -165,19 +167,7 @@ export default function CustomersPage() {
         </div>
       </div>
 
-      {/* Company Info Footer */}
-      <div className="bg-gray-100 py-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
-            세상을 연결하는 기술, 일상의 가치를 만드는 기업
-          </p>
-          <p className="text-base sm:text-lg font-bold text-gray-900 mb-4">아이씨티코리아 ㈜</p>
-          <p className="text-sm sm:text-base text-gray-600 mb-2">
-            (14055) 경기도 안양시 동안구 시민대로327번길 11-41 206호
-          </p>
-          <p className="text-sm sm:text-base text-gray-600">E-Mail : ttykill@hanmail.net</p>
-        </div>
-      </div>
+      <CompanyFooter />
     </div>
   )
 }

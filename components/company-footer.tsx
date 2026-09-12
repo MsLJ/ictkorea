@@ -6,12 +6,12 @@ export default function CompanyFooter() {
   const { t } = useLanguage()
 
   return (
-    <footer className="px-4 pb-12 pt-2 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl rounded-lg bg-gray-100 p-8 text-center">
-        <h3 className="text-xl font-bold text-gray-900 tracking-wide">{t.company.slogan}</h3>
-        <p className="text-gray-700 mt-4 mb-2">{t.company.name}</p>
-        <p className="text-sm text-gray-600">{t.company.address}</p>
-        <p className="text-sm text-gray-600">{t.company.email}</p>
+    <footer className="border-t border-slate-200 bg-white px-4 py-12 text-center sm:px-6">
+      <h3 className="text-balance text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">{t.company.slogan}</h3>
+      <p className="mt-3 text-lg font-semibold text-blue-700">{t.company.name}</p>
+      <div className="mt-3 space-y-1 text-sm leading-6 text-slate-500">
+        <p>{t.company.address}</p>
+        <p>{t.company.email}</p>
       </div>
     </footer>
   )

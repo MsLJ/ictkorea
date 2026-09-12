@@ -49,15 +49,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      <section className="border-t border-slate-200 bg-white px-4 py-12 text-center sm:px-6">
-        <h3 className="text-balance text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">세상을 연결하는 기술, 일상의 가치를 만드는 기업</h3>
-        <p className="mt-3 text-lg font-semibold text-blue-700">아이씨티코리아 ㈜</p>
-        <div className="mt-3 space-y-1 text-sm leading-6 text-slate-500">
-          <p>(14055) 경기도 안양시 동안구 시민대로327번길 11-41 206호</p>
-          <p>E-Mail : ttykill@hanmail.net</p>
-        </div>
-      </section>
       <CompanyFooter />
     </main>
   )

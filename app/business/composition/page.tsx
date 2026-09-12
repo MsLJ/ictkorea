@@ -1,3 +1,4 @@
+import CompanyFooter from "@/components/company-footer"
 import BusinessNav from "@/components/business-nav"
 import Image from "next/image"
 
@@ -140,15 +141,8 @@ export default function CompositionPage() {
             </ul>
           </div>
         </div>
-
-        {/* Company Info */}
-        <div className="bg-gray-100 rounded-lg p-8 text-center">
-          <h3 className="text-xl font-bold text-gray-900 mb-4 tracking-wider">세상을 연결하는 기술, 일상의 가치를 만드는 기업</h3>
-          <p className="text-gray-700 mb-2">아이씨티코리아 ㈜</p>
-          <p className="text-sm text-gray-600">(14055) 경기도 안양시 동안구 시민대로327번길 11-41 206호</p>
-          <p className="text-sm text-gray-600">E-Mail : ttykill@hanmail.net</p>
-        </div>
       </div>
+      <CompanyFooter />
     </div>
   )
 }
