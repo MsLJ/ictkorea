@@ -21,10 +21,6 @@ export default function NiSiPage() {
             일반 기업체 및 공공기관의 정보 자원 인프라 구축을 위한 컨설팅, 전산실 구축, 시스템 이전 및 가상화 기반의 자원통합, 운영 및 유지보수 사업을 수행합니다.
           </p>
         </div>
-        <div className="mb-10 rounded-3xl border border-slate-200 bg-white p-7 shadow-[0_24px_70px_-35px_rgba(15,23,42,0.45)] sm:p-10">
-          <p className="text-sm font-semibold tracking-[0.25em] text-cyan-600">CUSTOMERS</p>
-          <p className="mt-3 text-lg font-semibold text-blue-700">안양시 / 안양산업진흥원 / 포항시 / 알티넷㈜ 외</p>
-        </div>
         <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-[0_24px_70px_-35px_rgba(15,23,42,0.45)] sm:p-8">
           <Image
             src="/images/business-nisi.png"
