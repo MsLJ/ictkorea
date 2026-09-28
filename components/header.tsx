@@ -61,7 +61,7 @@ export default function Header() {
         <div className="flex md:grid md:grid-cols-3 items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center justify-start">
-            <Image src="/images/logo.png" alt="ICT KOREA" width={240} height={80} className="h-16 w-auto" priority />
+            <Image src="/images/logo.png" alt="ICT KOREA" width={96} height={96} className="h-12 w-auto" priority />
           </Link>
 
           {/* Desktop Navigation - Centered */}
